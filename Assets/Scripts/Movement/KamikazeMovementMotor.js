@@ -21,7 +21,7 @@ class KamikazeMovementMotor extends MovementMotor {
 				
 		var deltaVelocity : Vector3 = (smoothedDirection * flyingSpeed + zigzag) - rigidbody.velocity;		
 		if (Vector3.Dot (dir, transform.forward) > 0.8f)
-			rigidbody.AddForce (-deltaVelocity, ForceMode.Force);
+			rigidbody.AddForce (deltaVelocity, ForceMode.Force);
 		else {
 			rigidbody.AddForce (-deltaVelocity * backtrackIntensity, ForceMode.Force);	
 			orientationSpeed = oriantationMultiplier;
