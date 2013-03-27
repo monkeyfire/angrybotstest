@@ -17,6 +17,7 @@ class CameraControl extends MonoBehaviour {
 		if(!m_Player)
 			Debug.LogError("No player found or player is not tagged!");
 		m_Offset2Player = transform.position-m_Player.position;
+		Debug.Log("fucking hell it works!");
 	}
 	
 	// Update is called once per frame

@@ -20,6 +20,10 @@ function Update()
 	}
 	
 	thisMesh.uv = uvs;
+	Debug.Log("fuck me a change has been made!");
 }
+
+
+
 
 #endif
